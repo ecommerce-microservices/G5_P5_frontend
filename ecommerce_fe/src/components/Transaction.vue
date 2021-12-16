@@ -1,7 +1,7 @@
 <template>
     <div id="transaction" class="transaction">
         <div class="container_transaction">
-            <h2>Realizar Transacción:</h2>
+            <h2>Realizar compra:</h2>
 
             <!-- TODO use combobox here -->
             <form v-on:submit.prevent="processTransaction">

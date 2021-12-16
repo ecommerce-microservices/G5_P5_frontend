@@ -31,7 +31,6 @@
                     password : "",
                     name     : "",
                     email    : "",
-                    balance  : 0
                 }
             }
         },
@@ -41,11 +40,11 @@
                 await this.$apollo.mutate(
                     {
                         mutation: gql`
-                            mutation SignUpUser($userInput: SignUpInput) {
-                              signUpUser(userInput: $userInput) {
-                                refresh
-                                access
-                              }
+                            mutation Mutation($userInput: SignUpInput) {
+                                signUpUser(userInput: $userInput) {
+                                    refresh
+                                    access
+                                }
                             }
                         `,
                         variables:{
