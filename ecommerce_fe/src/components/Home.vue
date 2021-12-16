@@ -1,21 +1,125 @@
 <template>
-    <div class="information">
-        <div class="home">
-            <h1>Bienvenido <span>{{ userDetailById.name }}</span>!</h1>
-        </div>
+    <section class="main-container">
+        <div class="cards-container">
 
-        <div class="details">
-            <h3>Su información es la siguiente</h3>
-            <h2>
-                Nombre de Usuario:
-                <span>{{ userDetailById.username }}</span>
-            </h2>
-            <h2>
-                Correo electrónico:
-                <span>{{ userDetailById.email }}</span>
-            </h2>
+          <div class="product-card">
+            <img src="../../logos/asus.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$1400,00</p>
+                <p>Portátil ASUS</p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/sony.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$110,00</p>
+                <p>Celular sony </p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/xiaomi.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$700,00</p>
+                <p>Xiaomi RedMi 10 </p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/iphone.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$1200,00</p>
+                <p>Iphone 13</p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/huaweip30.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$600,00</p>
+                <p>Huawei P30 lite</p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/galaxy.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$1200,00</p>
+                <p>Galaxy Note 10</p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/macbook.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$899,00</p>
+                <p>MacBook Pro </p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/ps5.png" alt="">
+            <div class="product-info">
+              <div>
+                <p>$400,00</p>
+                <p>PlayStation 5</p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="../../logos/xbox.jpg" alt="">
+            <div class="product-info">
+              <div>
+                <p>$400,00</p>
+                <p>Xbox One 1 TB</p>
+              </div>
+              <figure>
+                <img src="../../icons/bt_add_to_cart.svg" alt="">
+              </figure>
+            </div>
+          </div>
         </div>
-    </div>
+    </section>
 </template>
 
 
@@ -24,7 +128,6 @@
     import gql        from "graphql-tag";
     export default{
         name: "Home",
-
         data: function(){
             return {
                 userId         : jwt_decode(localStorage.getItem("tokenRefresh")).user_id,
@@ -35,7 +138,6 @@
                 }
             }
         },
-
         apollo: {
             userDetailById : {
                 query: gql`
@@ -73,28 +175,23 @@
         font-size: 60px;
         color: #283747;
     }
-
     .information h2 {
         font-size: 40px;
         color: #283747;
     }
-
     .information span {
         color: crimson;
         font-weight: bold;
     }
-
     .details h3 {
         font-size: 35px;
         color: #283747;
         text-align: center;
     }
-
     .details h2 {
         font-size: 35px;
         color: #283747;
     }
-
     .details {
         border: 3px solid rgba(0, 0, 0, 0.3);
         border-radius: 20px;

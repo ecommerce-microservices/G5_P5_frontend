@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="app">
     <div class="header">
-      <h1>Merge<br />Ecommerce</h1>
+      <h1>Merge<br /></h1>
       <nav>
         <button v-if="isAuth" v-on:click="loadHome"> Inicio </button>
         <button v-if="isAuth" v-on:click="loadAccount"> Cuenta </button>
@@ -10,6 +10,7 @@
 
         <button v-if="!isAuth" v-on:click="loadLogIn"> Iniciar Sesión </button>
         <button v-if="!isAuth" v-on:click="loadSignUp"> Registrarse </button>
+        
       </nav>
     </div>
 
@@ -23,7 +24,7 @@
     </div>
 
     <div class="footer">
-      <h2>MisionTic 2021 - C4P5 Course</h2>
+      <h2>La mejor tecnología la tiene <strong> MERGE</strong></h2>
     </div>
   </div>
 </template>
@@ -111,8 +112,8 @@
     padding: 0;
     width: 100%;
     height: 10vh;
-    min-height: 100px;
-    background-color: #283747 ;
+    min-height: 50px;
+    background-color: #19dad0 ;
     color:#E5E7E9 ;
     display: flex;
     justify-content: space-between;
@@ -120,13 +121,13 @@
   }
 
   .header h1{
-    width: 20%;
+    width: 15%;
     text-align: center;
   }
 
   .header nav {
     height: 100%;
-    width: 30%;
+    width: 15%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,14 +136,14 @@
 
   .header nav button{
     color: #E5E7E9;
-    background: #283747;
+    background: #1de7cc;
     border: 1px solid #E5E7E9;
     border-radius: 5px;
     padding: 10px 20px;
   }
 
   .header nav button:hover{
-    color: #283747;
+    color: #1de7cc;
     background: #E5E7E9;
     border: 1px solid #E5E7E9;
   }
@@ -161,7 +162,7 @@
     width: 100%;
     height: 10vh;
     min-height: 100px;
-    background-color: #283747;
+    background-color: #1de7cc;
     color: #E5E7E9;
   }
 
